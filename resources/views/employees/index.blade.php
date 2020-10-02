@@ -14,9 +14,9 @@
     <title>ABOUT</title>
 </head>
 <body>
-    <h1>ABOUT PAGE</h1>
+    <h1>EMPLOYEE LIST</h1>
 
-    Users:
+    EMPLOYEES:
     <table class="table table-bordered">
        
         <th>
@@ -28,12 +28,12 @@
             </tr>
         </th>
         <tbody>
-            @foreach($users as $user)
+            @foreach($employees as $employee)
                 <tr>
-                    <td>{{$user->id }} </td>
-                    <td>{{$user->name }} </td>
-                    <td>{{$user->email }} </td>
-                    <td>{{$user->salary }} </td>
+                    <td>{{$employee->id }} </td>
+                    <td>{{$employee->name }} </td>
+                    <td>{{$employee->email }} </td>
+                    <td>{{$employee->salary }} </td>
                 </tr>
             @endforeach 
         </tbody>
